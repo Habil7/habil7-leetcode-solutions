@@ -12,7 +12,7 @@ class Solution:
             head = head.next
             
         left, right = 0, len(nums) - 1
-        while left <= right:
+        while left < right:
             if nums[left] != nums[right]:
                 return False
             
@@ -20,4 +20,3 @@ class Solution:
             right -= 1
 
         return True  
-                
